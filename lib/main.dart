@@ -17,9 +17,9 @@ class HomePage extends StatelessWidget {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Colors.orange[900],
-              Colors.orange[800],
-              Colors.orange[400],
+              Colors.blue[900]!,
+              Colors.blue[800]!,
+              Colors.blue[700]!,
           ]),
         ),
         child:  Column(
@@ -78,7 +78,9 @@ class HomePage extends StatelessWidget {
                             padding: const EdgeInsets.all(10),
                             decoration: BoxDecoration(
                               border: Border(bottom: BorderSide(
-                                color: Colors.grey[200])),
+                                color: Colors.grey[200]!
+                                ),
+                                ),
                             ),
                             child: const TextField(
                                 decoration: InputDecoration(
@@ -93,7 +95,7 @@ class HomePage extends StatelessWidget {
                             decoration: BoxDecoration(
                               border: Border(
                                 bottom: BorderSide(
-                                color: Colors.grey[200],
+                                color: Colors.grey[200]!,
                                 )
                                 ),
                             ),
@@ -116,7 +118,7 @@ class HomePage extends StatelessWidget {
                       margin: const EdgeInsets.symmetric(horizontal: 50),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(50),
-                        color: Colors.orange[900],
+                        color: Colors.blue[900],
                       ),
                       child: const Center(
                         child: Text("login",
@@ -163,27 +165,16 @@ class HomePage extends StatelessWidget {
                           ),
                         ),
                         ),
-
                       ],
                     )
-
-
-
-
-
-
                   ],
                 ),
                 ),
-
-
-
-
             )
             ),
-              
           ]),
       ),
     );
-  }}
+  }
+  }
 
