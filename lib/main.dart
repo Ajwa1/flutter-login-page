@@ -25,7 +25,7 @@ class HomePage extends StatelessWidget {
         child:  Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SizedBox(height: 80,),
+            const SizedBox(height: 45,),
             const Padding(
               padding: EdgeInsets.all(20),
               child: Column(
@@ -35,7 +35,7 @@ class HomePage extends StatelessWidget {
                     'Login',
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 40
+                      fontSize: 35
                     ),
                   ),
                   SizedBox(height: 10,),
@@ -43,7 +43,7 @@ class HomePage extends StatelessWidget {
                     'Welcome Back', 
                     style: TextStyle(
                     color: Colors.white,
-                    fontSize: 40
+                    fontSize: 20
                     ),
                   ),
                 ],
@@ -60,7 +60,7 @@ class HomePage extends StatelessWidget {
                   padding: const EdgeInsets.all(20),
                 child: Column(
                   children: [
-                    const SizedBox(height: 60),
+                    const SizedBox(height: 35),
                     Container(
                       padding: const EdgeInsets.all(30),
                       decoration: BoxDecoration(
@@ -75,7 +75,7 @@ class HomePage extends StatelessWidget {
                       child: Column(
                         children: [
                           Container(
-                            padding: const EdgeInsets.all(10),
+                            padding: const EdgeInsets.all(5),
                             decoration: BoxDecoration(
                               border: Border(bottom: BorderSide(
                                 color: Colors.grey[200]!
@@ -91,7 +91,7 @@ class HomePage extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            padding: const EdgeInsets.all(10),
+                            padding: const EdgeInsets.all(5),
                             decoration: BoxDecoration(
                               border: Border(
                                 bottom: BorderSide(
@@ -112,9 +112,9 @@ class HomePage extends StatelessWidget {
                     ),
                     const SizedBox(height: 40,),
                     const Text("Forget Password", style: TextStyle(color: Colors.grey),),
-                    const SizedBox(height: 40,),
+                    const SizedBox(height: 30,),
                     Container(
-                      height: 50,
+                      height: 40,
                       margin: const EdgeInsets.symmetric(horizontal: 50),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(50),
@@ -124,18 +124,18 @@ class HomePage extends StatelessWidget {
                         child: Text("login",
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 10,
+                          fontSize: 15,
                           fontWeight: FontWeight.bold),),
                       ),
                     ),
-                    const SizedBox(height: 50,),
+                    const SizedBox(height: 25,),
                     const Text("Continue with social media",
                     style: TextStyle(color: Colors.grey),),
-                    const SizedBox(height: 30,),
+                    const SizedBox(height: 20,),
                     Row(
                       children: [
                         Expanded(child: Container(
-                          height: 50,
+                          height: 40,
                           decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(50),
                           color: Colors.blue
@@ -151,7 +151,7 @@ class HomePage extends StatelessWidget {
                         ),
                         const SizedBox(width: 30,),
                         Expanded(child: Container(
-                          height: 50,
+                          height: 40,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(50),
                             color: Colors.blue
@@ -161,20 +161,20 @@ class HomePage extends StatelessWidget {
                             style: TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.bold,
-                            ),),
+                            ),
+                          ),
                           ),
                         ),
                         ),
-                      ],
-                    )
-                  ],
+                      ],)
+                    ],
+                  ),
                 ),
-                ),
-            )
+              )
             ),
           ]),
-      ),
-    );
-  }
+        ),
+      );
+    }
   }
 
